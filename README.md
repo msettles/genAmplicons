@@ -1,0 +1,2 @@
+# genAmplicons
+Generic Amplicon Sequences
