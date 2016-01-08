@@ -338,7 +338,7 @@ class TwoSequenceReadSet:
         self.MI2 = self.read_2[0:pr2StartPosition]
         # Barcode Pair Matching
         combined_pr = prTable.getMatch(pr1, pr2)
-        self.primer = [combined_pr[0], combined_pr[1], pr2Mismatch, pr1StartPosition, pr1EndPosition, combined_pr[2], pr2Mismatch, pr2StartPosition, pr2EndPosition]
+        self.primer = [combined_pr[0], combined_pr[1], pr1Mismatch, pr1StartPosition, pr1EndPosition, combined_pr[2], pr2Mismatch, pr2StartPosition, pr2EndPosition]
         self.goodRead = self.goodRead and combined_pr[0] is not None
         if self.goodRead:
             return 1
